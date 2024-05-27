@@ -33,6 +33,7 @@ router.post("/", async (req, res) => {
     email: req.body.email,
     phone: req.body.phone,
     enroll: req.body.enroll,
+    admissionDate: req.body.admissionDate,
   });
 
   try {
@@ -56,6 +57,7 @@ router.put("/:id", async (req, res) => {
           email: req.body.email,
           phone: req.body.phone,
           enroll: req.body.enroll,
+          admissionDate: req.body.admissionDate,
         },
       },
       { new: true }

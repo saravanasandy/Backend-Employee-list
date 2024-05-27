@@ -19,7 +19,7 @@ const StudentSchema = new mongoose.Schema({
   },
   admissionDate: {
     type: Date,
-    default: Date.now,
+    // default: Date.now,
   },
 });
 
